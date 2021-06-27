@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import SpringButton from "./explore/spring-button/SpringButton";
+import Accordion from "./explore/accordion/Accordion";
+import Test from "./explore/test";
+import FadingGreeting from "./explore/fading-greetings";
+import Nav from "./nav/Nav";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App position-relative d-flex align-items-baseline">
+        <Nav/>
+        <div>
+            <Test/>
+            <div style={{padding: "40px"}}/>
+            <FadingGreeting/>
+            <div style={{padding: "40px"}}/>
+            <SpringButton/>
+            <div style={{padding: "40px"}}/>
+            <Accordion/>
+        </div>
     </div>
   );
 }

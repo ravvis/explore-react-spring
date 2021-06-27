@@ -1,0 +1,17 @@
+.accordion-wrapper{
+
+}
+
+.accordion-title{
+    cursor: pointer;
+}
+
+.accordion-content{
+    transition: transform 0.3s ease-in;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.accordion-content.open{
+    transform: scaleY(1);
+}

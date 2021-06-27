@@ -1,0 +1,15 @@
+.springy-button {
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: 0 10px 30px -5px rgba(0,0,0,.3);
+    -webkit-transition: box-shadow .5s;
+    transition: box-shadow .5s
+}
+
+.springy-button:hover {
+    box-shadow: 0 30px 100px -10px rgba(0,0,0,.4)
+}
